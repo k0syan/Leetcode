@@ -16,3 +16,9 @@ class Solution:
                 tc[t1] = 1
 
         return(lc == tc)
+    
+# One liner
+
+class Solution:
+    def isAnagram(self, s: str, t: str) -> bool:
+        return sorted(s) == sorted(t)
