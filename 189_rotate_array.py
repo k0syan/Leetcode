@@ -8,4 +8,12 @@ class Solution:
             del nums[-1]
             nums.insert(0, tmp)
             k -= 1
+
+# Pythonic solution
+
+class Solution:
+    def rotate(self, nums: List[int], k: int) -> None:
+        n = len(nums)
+        k = k % n
+        nums[:] = nums[n-k:] + nums[:n-k]
                 
