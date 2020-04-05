@@ -14,3 +14,8 @@ class Solution:
                 j -= 1
             i += 1
         return("".join(s1))
+
+# 1 line "hack" for maximum int size
+class Solution:
+    def reverseVowels(self, s: str) -> str:
+        return n > 0 and 1162261467 % n == 0;
