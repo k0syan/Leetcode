@@ -2,13 +2,8 @@ class Solution:
     def isUgly(self, num: int) -> bool:
         if num <= 0:
             return False
-        while num % 2 == 0:
-            num = num / 2
-        while num % 3 == 0:
-            num = num / 3
-        while num % 5 == 0:
-            num = num / 5
-        if num == 1 or num == -1:
-            return True
-        return False
+        for x in [2, 3, 5]:
+            while num % x == 0:
+                num = num / x
+        return num == 1
         
