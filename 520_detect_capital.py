@@ -15,3 +15,8 @@ class Solution:
             else:
                 au = False
         return (f and au) or al
+    
+# Amazin Python methods
+class Solution:
+    def detectCapitalUse(self, word: str) -> bool:
+        return word.isupper() or word.islower() or word.istitle()
