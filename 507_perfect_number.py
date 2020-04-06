@@ -10,4 +10,11 @@ class Solution:
                 tot += i + num // i
             i += 1
         return tot == num
+    
+# Hardcoded hack for the best performance :D 
+
+class Solution:
+    def checkPerfectNumber(self, num: int) -> bool:
+        n = [6, 28, 496, 8128, 33550336]
+        return num in n
         
