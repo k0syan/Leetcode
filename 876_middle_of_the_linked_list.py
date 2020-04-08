@@ -14,4 +14,14 @@ class Solution:
         for i in range(n // 2):
             head = head.next
         return head
+    
+# Slow and fast pointers
+class Solution:
+    def middleNode(self, head: ListNode) -> ListNode:
+        slow = fast = head
+        while fast != None and fast.next != None:
+            slow = slow.next
+            fast = fast.next.next
+        return slow
+            
             
