@@ -11,3 +11,8 @@ class Solution:
             elif t > n:
                 return i - 1
             
+# Math perfect solution
+class Solution:
+    def arrangeCoins(self, n: int) -> int:
+        return (-1 + int(sqrt(1 + 8 * n))) // 2
+    
