@@ -15,3 +15,8 @@ class Solution:
             else:
                 e = mid
         return s
+    
+# One liner
+class Solution:
+    def peakIndexInMountainArray(self, A: List[int]) -> int:
+        return A.index(max(A))
