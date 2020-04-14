@@ -12,3 +12,9 @@ class Solution:
             if m == "D":
                 ud -= 1
         return lr == 0 and ud == 0
+
+    
+# One liner
+class Solution:
+    def judgeCircle(self, moves: str) -> bool:
+        return moves.count('L') == moves.count('R') and moves.count('U') == moves.count('D')
