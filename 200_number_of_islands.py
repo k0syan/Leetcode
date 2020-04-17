@@ -1,12 +1,6 @@
 class Solution:
     def dfs(gr: List[List[str]], d, v):
-        diag = vert = False
-        if d < 0 or d >= len(gr):
-            diag = True
-        if v < 0 or v >= len(gr[0]):
-            vert = True
-        
-        if diag or vert or gr[d][v] != "1":
+        if d < 0 or v < 0 or d >= len(gr) or v >= len(gr[0]) or gr[d][v] != '1':
             return
         
         gr[d][v] = "2"
