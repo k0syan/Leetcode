@@ -14,4 +14,6 @@ class Solution:
         return t1.val == t2.val and self.helper(t1.left, t2.right) and self.helper(t1.right, t2.left)
     
     def isSymmetric(self, root: TreeNode) -> bool:
-        return self.helper(root, root)
+        if not root:
+            return True
+        return self.helper(root.left, root.right)
