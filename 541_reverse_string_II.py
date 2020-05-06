@@ -10,3 +10,13 @@ class Solution:
             i += k
             i += k
         return ans
+
+# Beautiful but slow
+class Solution:
+    def reverseStr(self, s: str, k: int) -> str:
+        i = 0
+        ans = ""
+        a = list(s)
+        for i in range(0, len(a), 2 * k):
+            a[i:i+k] = reversed(a[i:i+k])
+        return "".join(a)
